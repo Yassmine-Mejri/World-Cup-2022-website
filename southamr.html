@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" href="slick/slick.css">
+    <script src="https://kit.fontawesome.com/6d0968a15a.js" crossorigin="anonymous"></script>
+    <title>South American</title>
+</head>
+<body onload="slider()">
+    <header>
+        <div class="banner">
+          <div class="slider">
+            <img src="front1.jpg" id="slide_img">
+          </div>
+          <div class="overplay">
+          
+            <nav>
+            <div class="navbar">
+      
+              <div class="logo">
+                <img src="home/logo2- 2.png">
+              </div>
+      
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="africa.html">Africa Zone</a></li>
+                <li><a href="europe.html">Europe Zone</a></li>
+                <li><a href="southamr.html">South America Zone</a></li>
+              </ul>
+      
+              <div class="box">
+                <input type="text" placeholder="Search...">
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </div>
+      
+            </div>
+            
+            <button type="button" class="bout" onclick="openPopup()">LOGIN</button>
+            </nav>
+
+            <div class="text">
+                <h1>South America Zone</h1>
+            </div>
+            <div class="but">
+              <a href="brazil.html">
+              <button  type=" button" class="butt" ><span class="sp"></span>Brazil</button></a>
+              <a href="Argentine.html">
+              <button  type=" button" class="butt"><span class="sp"></span>Argentina</button></a>
+            </div>
+            <a href="#scroll2"><div class="scroll-down"></div></a>
+
+
+            <div class="popup" id="popup">  
+              <button type="close" class="close" onclick="closePopup()">X</button>
+              <input type="checkbox" id="chk" aria-hidden="true">
+              <div class="signup">
+                  <form >
+                      <label for="chk" aria-hidden="true">Sign up</label>
+                      <input class="cs" type="Text" name="txt" placeholder="User name " required="">
+                      <input class="cs"type="Email" name="email" placeholder="Email " required="">
+                      <input class="cs"type="Password" name="pswd" placeholder="Password " required="">
+                      <button class ="btn">Sign up</button>
+                  </form>
+              </div>
+      
+              <div class="login">
+                  <form>
+                      <label for="chk" aria-hidden="true">Login</label>
+                      <input class="cs"type="Email" name="email" placeholder="Email " required="">
+                      <input class="cs"type="Password" name="pswd" placeholder="Password " required="">
+                      <button class ="btn">Login</button>
+                  </form>
+              </div>
+          </div>
+      
+      
+          </div>
+        </div>
+        </header>
+
+
+
+        <section id="scroll2">
+          <div class="map">
+            <img src="home/World_Map.png" style="width: 60%;">
+            <div class="pin3"></div>
+            <div class="pulse3"></div>
+          </div>
+        </section>
+
+
+        <div id="cont">
+          <div class="it1">
+            <video width="600px" controls>
+              <source src="Zone Amerique du Sud/Southam.mp4" type="video/mp4">
+            </video>  
+            <br>
+            <div class="text">
+            <h4> The CONMEBOL Copa America champions! - Top 10 Goals </h4>
+            </div>
+          </div>
+          <div class="it2">
+            <div class="text">
+              <h2>  Copa America </h2>
+              <h4> All of the CONMEBOL Copa America champions </h4>
+              <h2> There have been 47 editions of the tournament and 8 of the 10 national teams have been continental champions.</h2>
+              <h3>Argentina were crowned champion of the CONMEBOL Copa America 2021 with a 1-0 win against rivals Brazil at the Estadio Maracaná to regain the title after a long 28 year wait.</h2>
+          </div>
+          </div>
+        </div>     
+
+
+
+        <footer>
+            <div class="row">
+              <div class="col">
+                <img src="home/logo2- 2.png" class="logo">
+                  <p>Get prepared for travel around Qatar</p>
+                </div>
+              <div class="col">
+                  <h3>Contact<div class="underline"><span></span></div></h3>
+                  <p>ATTN: Dennis Menees, CEO Global Co.</p> 
+                  <p>90210 Broadway Blvd. <br> Nashville, TN 37011-5678</p>  
+                  <p class="email-id">GerinveCeo@gmail.com</p>
+                  <h4>+122 012234565</h4>
+              </div>
+              <div class="col">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                  <li><a href="africa.html">Africa Zone</a></li>
+                  <li><a href="europe.html">Europe Zone</a></li>
+                  <li><a href="southamr.html">South American Zone</a></li>
+                  
+                </ul>
+              </div> 
+              <div class="col">
+                <h3>LOGIN<div class="underline"><span></span></div></h3>
+                <form class="foot" >
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email" required>
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div  class="social-icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>     
+            </div>
+          </footer>
+
+
+
+
+
+          <!--slide img-->
+  <script>
+    var slide_img = document.getElementById("slide_img");
+
+    var images = new Array(
+      "Zone Amerique du Sud/Argentina/ARG25.jpg",
+      "Zone Amerique du Sud/Brazil/BR3.jpg",
+      "Zone Amerique du Sud/Argentina/ARG2.jpg",
+      "Zone Amerique du Sud/Brazil/BR2.jpg"
+    );
+
+    var len = images.length;
+    var i = 0;
+
+    function slider(){
+      if(i > len-1){
+        i = 0;
+      }
+      slide_img.src = images[i];
+      i++;
+      setTimeout('slider()',3000);
+    }
+
+  </script>
+
+
+<script>
+  let popup=document.getElementById("popup");
+
+  function openPopup(){
+      popup.classList.add("open-popup");
+  }
+
+  function closePopup(){
+      popup.classList.remove("open-popup");
+  }
+</script>
+    
+</body>
+</html>
